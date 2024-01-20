@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersize 7</title>
+    <style>
+    .cat{
+        width: 200px;
+        border-radius: 20px;
+    }      
+    .cat1{
+        width: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .cat2{
+        width: 200px;
+        object-fit: contain;
+        border-radius: 100px;
+    }
+    .searchbar{
+       height: 30px;
+       border-radius: 8px;
+       border-style: solid;
+      font-size: 16px;
+      border-color: rgb(200, 200, 200);
+      border-width: 1px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .googlelogo{
+        margin-left: 190px;
+        display: block;
+        height: 150px;
+        margin-bottom: 0 px;
+        width: 200px;
+    
+    }
+    .url{
+        margin-top: 0px;
+        width: 500px;
+        margin-left: 70px;
+        padding-left: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 20px;
+        border: none;
+        font-size: 16px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25)
+      
+    }
+    .link{
+        width: 320px;
+        margin-left: 2px;
+        padding: 8px;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 3px;
+        border-color: rgb(200, 200, 200);
+        margin-bottom: 0px;
+    }
+    .policy{
+        margin-top: 8px;
+        padding-left: 5px;
+        color: rgb(69, 69, 69);
+        font-family: roboto;
+        font-size: 14px;
+
+    }
+    .agree{
+        margin-left:px ;
+        background-color: rgb(56, 121, 196);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 130px;
+        padding-right: 130px;
+        border: none;
+        border-radius: 25px;
+        font-size: 14px;
+        color: white;
+
+    }
+    .profile{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-left: 10px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    .what{
+      border: none;
+      width: 200px;
+      vertical-align: middle;
+      font-size: 16px;
+      
+    }
+    .tweet{
+        background-color: rgb(29, 155, 240);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
+        border-radius: 50px;
+        font-weight: bold;
+        margin-left: 65px;
+        color: white;
+        border: none;
+        vertical-align: middle;
+    }
+    .name{
+        display: block;
+        margin-bottom: 8px;
+    }
+    .email{
+        display: block;
+
+    }
+    .survey{
+        display: inline-block;
+        width: 200px;
+        vertical-align: middle;
+    }
+    .sign{
+        margin-top: 10px;
+        display: block;
+       width: 263px;
+        background-color: rgb(29, 155, 240);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 80px;
+        padding-right: 80px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+
+    }
+    #mail{
+        display: block;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 8px;
+        padding-left: 12px;
+        width: 242px;
+        border-color: rgb(200 , 200, 200);
+        border-style: solid;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .form{
+        border-color: rgb(200, 200, 200);
+        border-style: solid;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 5px;
+        width: 110px;
+    }
+    #first{
+        padding-left: 12px;
+    }
+    #last{
+        padding-left: 12px;
+    }
+    .request{
+        font-size: 40px;
+        font-family: arial;
+        margin-bottom: 25px;
+    }
+    .pickup{
+        display: block;
+       width: 300px;
+       font-family: arial;
+       background-color: rgb(240,240, 240);
+       border-style: solid;
+        border: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+    }
+    .destination{
+        display: block;
+        border: none;
+        font-family: arial;
+        margin-top: 10px;
+        width: 300px;
+        background-color: rgb(240, 240, 240);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        margin-bottom: 25px;
+    }
+    .requestnow{
+        font-family: arial;
+        margin-left: 5px;
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        border: none;
+    }
+    
+    .requestnow:hover{
+        cursor: pointer;
+    }
+    .later{
+        font-family: arial;
+        margin-left: 12px;
+        font-size: 14px;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: rgb(240, 240, 240);
+    }
+    .later:hover{
+        cursor: pointer;
+    }
+    .red{
+        width: 100px;
+        background-color: red;
+        height: 100px;
+    }
+    .green{
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+    .service{
+        padding-left: 12px;
+        padding-top: 8px;
+        border-width: 1px;
+        border-style: solid;
+        height: 100px;
+        width: 300px;
+        background-color: rgb(240, 240, 240);
+    }
+    .youtube{
+        font-family: arial;
+        padding-left: 20px;
+        padding-right:5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        background-color: black;
+        height: 100px;
+        width: 290px;
+       
+       
+    }
+    .music{
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .add{
+        color:rgba(255, 255, 255, 0.524);
+        font-size: 12px;
+    }
+   #account{
+    padding: 10px;
+    width: 450px;
+    height: 70px;
+    box-sizing: border-box;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.30);
+    
+   }
+   .oliverprofile{
+    display: inline-block;
+    width: 50px;
+    border-radius: 25px;
+   }
+   .des{
+    display: inline-block;
+    vertical-align: top;
+   }
+   .profile{
+    display: inline-block;
+    vertical-align: top;
+   }
+   .oliver{
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+
+   }
+   .animal , .status{
+    color: rgb(96, 96, 96);
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+   }
+   .follow{
+   padding-left: 12px;
+   padding-right: 12px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+    margin-left: 150px;
+    margin-top: 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 15px;
+   }
+
+    </style>
+</head>
+<body>
+    <label for="link" style="color: rgb(69, 69, 69); padding-left: 3px;">Email</label>
+    <br>
+    <input type="text" class="link" >
+    <p class="policy">By clicking Agree & Join , you agree to the Privacy Policy.</p>
+    <button class="agree">Agree & Join</button>
+   <br><br><hr><br><br>
+    <input type="text" placeholder="search" class="searchbar">
+    <br><br><hr><br>
+    <img src="googlelogo.png" class="googlelogo">
+    <input type="text" class="url" placeholder="Search Google or type a URL">
+
+    <br><br>
+<hr>
+    <img class="cat" src="cat.jpg">
+    <br>
+    <img class="cat1"src="cat.jpg">
+   <br>
+   <img src="cat.jpg"  class="cat2">
+<br><br><hr>
+<br>
+<div id="account">
+    <img src="cat.jpg" class="profile" >
+<input type="text" class="what" placeholder="What's happening?">
+<button class="tweet">Tweet</button>
+</div>
+<br><hr>
+<br>
+<br>
+<input type="text" class="name" placeholder="Name">
+<input type="text" class="email" placeholder="Email">
+<br><hr>
+<br>
+<p class="survey">Thanks for chatting with our customer support. Would you like to take a quick survey.</p>
+<button class="yes">Yes</button>
+<button class="no">No</button>
+<br>
+<hr>
+<br>
+<input type="text" class="form" placeholder="First Name" id="first">
+<input type="text" class="form"placeholder="Last Name" id="last">
+<input type="text " placeholder="Email" class="form" id="mail">
+<button class="sign">Sign Up</button>
+<br>
+<hr>
+<p class="request">Request a ride now</p>
+<input type="text" class="pickup" placeholder="Enter pickup location">
+<input type="text" class="destination" placeholder="Enter destination">
+<button class="requestnow">Request now</button>
+<button class="later">Schedule for later</button>
+<br>
+<hr>
+<div class="red"></div>
+<hr>
+<div class="green"></div>
+<hr>
+<br>
+<div class="service">
+    <p class="sat">
+        Satisfied with our service?
+    </p>
+    <button >Yes</button>
+    <button >No</button>
+</div>
+<br>
+<hr>
+<br>
+<div class="youtube">
+   <p class="music">Install YouTube Music</p>
+   <p class="add">Add YouTube Music to your desktop for quick and easy access</p>
+</div>
+<br>
+<hr>
+<br>
+<div>
+    <div class="profile">
+        <img class="oliverprofile" src="cat.jpg" alt="">
+    </div>
+    <div class="des">
+        <p class="oliver">Oliver</p>
+        <p class="animal">the cat</p>
+        <p class="status">popular</p>
+    </div>
+   <button class="follow">Follow</button>
+
+</div>
+
+
+</body>
+</html>

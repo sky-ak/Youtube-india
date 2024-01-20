@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divpractice</title>
+    <style>
+        .profile{
+            display: inline-block;
+            width:100px;
+            border-radius: 50px;
+            object-fit: contain;
+            vertical-align: top;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .imageblock{
+            display: inline-block;
+            width: 100px;
+            vertical-align: top;
+        }
+        .follow{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 45px;
+        }
+        .button{
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+        }
+        .about{
+            display: inline-block;
+            margin-left: 45px;
+           
+        }
+       #firstbutton{
+        margin-left: 25px;
+       }
+       #thirdbutton{
+        margin-left: 25px;
+       }
+       .div1{
+        margin-bottom: 20px;
+       }
+       .div2{
+        margin-bottom: 25px;
+       }
+       /* p {
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profile {
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+.mutual-friends-row {
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+.mutual-friend-picture {
+  height: 28px;
+  width: 28px;
+  object-fit: cover;
+  border-radius: 14px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.mutual-friends {
+  display: inline-block;
+  vertical-align: middle;
+  color: rgb(100, 100, 100);
+}
+
+.add-friend-button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+} */
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="imageblock">
+            <img class="profile" src="cat.jpg" alt="">
+        </div>
+        <div class="about" id="first">
+            <div>
+                <p>oliver</p>
+            </div>
+            <div>
+                <p>the cat</p>
+            </div>
+            <div>
+                <p>popular</p>
+            </div>
+
+        </div>
+        <div class="button">
+            <button  id="firstbutton" class="follow">follow</button>
+        </div>
+
+    </div >
+    <div class="div2">
+        <div class="imageblock">
+             <img class="profile" src="cat.jpg" alt=""></div>
+        <div class="about" id="second">
+            <div>
+                <p>mimi</p>
+            </div>
+            <div>
+                <p>sleepy cat</p>
+            </div>
+            <div>
+                <p>popular</p>
+            </div>
+        </div>
+        <div class="button">
+            <button class="follow" id="secondbutton" >follow</button>
+        </div>
+    </div>
+    <div class="div3">
+        <div  class="imageblock"><img class="profile" src="cat.jpg" alt=""></div>
+        <div class="about" id="third">
+            <div>
+                <p>tommy</p>
+            </div>
+            <div>
+                <p>the dog</p>
+            </div>
+            <div>
+                <p>popular</p>
+            </div>
+        </div>
+        <div class="button">
+            <button class="follow" id="thirdbutton">follow</button>
+        </div>
+    </div>
+<br>
+<br>
+<!-- <div class="profile">
+    <img class="profile-picture" src="cat.jpg">
+    <p class="name">
+      Oliver
+    </p>
+    <div class="mutual-friends-row">
+      <img class="mutual-friend-picture" src="dog2.jpg">
+      <p class="mutual-friends">
+        2 mutual friends
+      </p>
+    </div>
+    <button class="add-friend-button">
+      Add Friend
+    </button>
+  </div>
+
+  <div class="profile">
+    <img class="profile-picture" src="cat2.jpg">
+    <p class="name">
+      Mimi
+    </p>
+    <div class="mutual-friends-row">
+      <img class="mutual-friend-picture" src="dog2.jpg">
+      <p class="mutual-friends">
+        3 mutual friends
+      </p>
+    </div>
+    <button class="add-friend-button">
+      Add Friend
+    </button>
+  </div>
+
+  <div class="profile">
+    <img class="profile-picture" src="dog.jpg">
+    <p class="name">
+      Rex
+    </p>
+    <div class="mutual-friends-row">
+      <img class="mutual-friend-picture" src="dog2.jpg">
+      <p class="mutual-friends">
+        4 mutual friends
+      </p>
+    </div>
+    <button class="add-friend-button">
+      Add Friend
+    </button>
+  </div>
+
+-->
+<style>
+  .close{
+    margin-bottom: 400px;
+    margin-top: 100px;
+    height: 150px;
+    width: 400px;
+    background-color: lightcoral;
+    position: relative;
+  }
+  .closebutton{
+   
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-family: Arial;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+</style>
+<div class="close"><div class="closebutton">
+  X
+
+</div>
+<div>
+  <a href=”https://www.google.com“> <img src="cat2.jpg" width=”10″ height=”13″> </a>
+</div>
+</body>
+
+</html>
